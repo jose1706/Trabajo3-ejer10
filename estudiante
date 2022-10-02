@@ -1,0 +1,19 @@
+
+package ejer10C4;
+public class estudiante {
+    String nombre;
+    int numero_de_inscripcion;
+    public static double pago_matricula (double patrimonio, double estrato){
+        double matricula;
+        if (patrimonio > 2000000 && estrato > 3 ){
+            double incremento;
+            incremento = 0.03*patrimonio;
+            matricula = incremento+50000;
+        }
+        else {
+            matricula = 50000;
+        }
+        return matricula;
+    }
+    
+}
